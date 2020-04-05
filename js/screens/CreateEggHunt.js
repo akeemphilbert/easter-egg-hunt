@@ -13,7 +13,7 @@ export default ({currentEggHunt, onHideEggs}) => {
             </SafeAreaView>;
         } else {
             return <SafeAreaView>
-                <HideEggAR />
+                <EggList onHideEggs={onHideEggs} currentEggHunt={currentEggHunt}/>
             </SafeAreaView>;
         }
 }
