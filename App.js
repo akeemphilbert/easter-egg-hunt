@@ -8,6 +8,7 @@ import store from "./js/store";
 //screens
 import HomeScreen from  "./js/screens/Home"
 import CreateEggHunt from "./js/containers/CreateEggHunt"
+import HideEggAR from "./js/screens/HideEggAR";
 const Stack = createStackNavigator();
 
 export default class App extends Component {
@@ -22,6 +23,7 @@ export default class App extends Component {
                   options={{title: 'Welcome'}}
               />
                 <Stack.Screen name="CreateEggHunt" component={CreateEggHunt} />
+                <Stack.Screen name="HideEgg" component={HideEggAR} />
             </Stack.Navigator>
           </NavigationContainer>
         </Provider>

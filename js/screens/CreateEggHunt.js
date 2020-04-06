@@ -5,15 +5,15 @@ import {StyleSheet, SafeAreaView, View, Button, Text} from 'react-native';
 import EggList from "./EggList";
 import HideEggAR from "./HideEggAR";
 
-export default ({currentEggHunt, onHideEggs}) => {
+export default ({currentEggHunt, onHideEggs, navigation}) => {
         //if there are no eggs then show the list to choose eggs from otherwise show the screen for hiding the eggs
         if (true) {
             return <SafeAreaView>
-                <EggList onHideEggs={onHideEggs} currentEggHunt={currentEggHunt}/>
+                <EggList onHideEggs={onHideEggs} currentEggHunt={currentEggHunt} navigation={navigation}/>
             </SafeAreaView>;
         } else {
             return <SafeAreaView>
-                <EggList onHideEggs={onHideEggs} currentEggHunt={currentEggHunt}/>
+                <EggList onHideEggs={onHideEggs} currentEggHunt={currentEggHunt} navigation={navigation}/>
             </SafeAreaView>;
         }
 }
