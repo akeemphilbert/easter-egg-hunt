@@ -1,12 +1,18 @@
-import {ADD_HUNT_EGGS} from "./actionTypes";
+import {ADD_HUNT_EGGS, UPDATE_HUNT_EGG} from "./actionTypes";
 
-export const addHuntEggs = (hunt,egg,amt) => {
+export const addHuntEggs = (egg,amt) => {
     return {
         type: ADD_HUNT_EGGS,
         payload: {
-            hunt: hunt,
             egg: egg,
             amt: amt
         }
     }
 };
+
+export const updateEgg = (egg) => {
+    return {
+        type: UPDATE_HUNT_EGG,
+        payload: egg
+    }
+}
