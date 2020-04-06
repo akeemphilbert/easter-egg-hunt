@@ -14,7 +14,6 @@ const getUnplacedEggs = (eggs) => {
 }
 
 const mapStateToProps = (state) => {
-    debugger;
     return {
         eggs: getUnplacedEggs(state.currentEggHunt.eggs)
     }
