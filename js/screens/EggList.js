@@ -1,16 +1,20 @@
 'use strict';
 
 import React, { Component } from 'react';
-import {StyleSheet, SafeAreaView, View, Button, Text} from 'react-native';
+import {StyleSheet, SafeAreaView , Button} from 'react-native';
+import {addHuntEggs} from "../actions";
 
-export default ({onHideEggs, navigation}) => {
+export default ({eggs,onPickEgg, navigation}) => {
     return (
         <SafeAreaView>
-            <Button title="Hide Eggs" onPress={() => onHideEggs({
-                id: "some id",
-                title: "example egg",
-                image: "some image"
-            },2,navigation)}  />
+            { Object.values(eggs).map((egg,key)=>{
+                return (
+                    <Button title={egg.title} onPress={()=>onPickEgg(egg,navigation)} key={key}/>
+                )
+            })
+
+            }
+            <Button title="Invite Users" onPress={()=>navigation.navigate("Invite")}/>
         </SafeAreaView>
     )
 }

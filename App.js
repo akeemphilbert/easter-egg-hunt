@@ -11,9 +11,9 @@ import {mapping, light as lightTheme} from '@eva-design/eva';
 import store from './js/store';
 //screens
 import HomeScreen from './js/screens/Home';
-import CreateEggHunt from './js/containers/CreateEggHunt';
-// import HideEggWrapper from "./js/screens/HideEggWrapper";
+import EggList from './js/containers/EggList';
 import HideEgg from './js/containers/HideEgg';
+import Invite from './js/containers/Invite';
 const Stack = createStackNavigator();
 
 export default class App extends Component {
@@ -24,8 +24,9 @@ export default class App extends Component {
           <NavigationContainer>
             <Stack.Navigator screenOptions={{headerShown: false}}>
               <Stack.Screen name="Home" component={HomeScreen} />
-              <Stack.Screen name="CreateEggHunt" component={CreateEggHunt} />
+              <Stack.Screen name="CreateEggHunt" component={EggList} />
               <Stack.Screen name="HideEgg" component={HideEgg} />
+              <Stack.Screen name="Invite" component={Invite} />
             </Stack.Navigator>
           </NavigationContainer>
         </Provider>
