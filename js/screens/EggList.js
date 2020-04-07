@@ -17,7 +17,6 @@ export default ({eggs, onPickEgg, navigation}) => {
         <Text style={styles.subHeader}>10 Eggs added to basket</Text>
       </View>
       <FlatGrid
-        alwaysBounceVertical={true}
         fadingEdgeLength={20}
         showsVerticalScrollIndicator={true}
         itemDimension={85}
@@ -46,7 +45,10 @@ export default ({eggs, onPickEgg, navigation}) => {
 const styles = StyleSheet.create({
   layout: {
     height: '100%',
-    padding: 30,
+    paddingTop: 10,
+    paddingRight: 30,
+    paddingLeft: 30,
+    paddingBottom: 30,
     justifyContent: 'flex-start',
   },
   header: {
@@ -62,9 +64,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   buttonContainer: {
-    // justifyContent: 'flex-end',
     marginTop: 10,
-    marginBottom: 20,
     alignItems: 'center',
   },
   button: {
