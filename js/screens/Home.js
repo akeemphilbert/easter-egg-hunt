@@ -1,53 +1,67 @@
 'use strict';
 
-import React, { Component } from 'react';
-import {StyleSheet, SafeAreaView, View, Button, Text} from 'react-native';
-
+import React from 'react';
+import {StyleSheet, SafeAreaView, View, Text} from 'react-native';
+import {Button, Layout, Divider} from '@ui-kitten/components';
 export default ({navigation}) => {
-    return (
-        <SafeAreaView>
-            <View>
-                <View>
-                    <Text style={styles.title}>Easter Egg Hunt</Text>
-                    <Text style={styles.byLine}>By Wepala</Text>
-                </View>
-                <View>
-                    <Button title="Create Egg Hunt" onPress={() => navigation.navigate('CreateEggHunt')} />
-                    <Button title="Join Egg Hunt" />
-                    <Button title="List of Hunts" />
-                </View>
-            </View>
-        </SafeAreaView>
-    )
-}
+  return (
+    <SafeAreaView>
+      <View style={styles.layout}>
+        <Text style={styles.header}>Easter Egg Hunt</Text>
+        <Text style={styles.subHeader}>By Wepala</Text>
+        <View style={styles.buttonContainer}>
+          <Button
+            style={styles.button}
+            appearance="filled"
+            status="success"
+            onPress={() => navigation.navigate('CreateEggHunt')}>
+            Create Egg Hunt
+          </Button>
+          <Button
+            style={styles.button}
+            textStyle={styles.text}
+            appearance="filled"
+            status="warning">
+            Join Egg Hunt
+          </Button>
+          <Button style={styles.button} appearance="filled" status="info">
+            List of Hunts
+          </Button>
+        </View>
+      </View>
+    </SafeAreaView>
+  );
+};
 
 const styles = StyleSheet.create({
-    screen: {
-        flexDirection: 'column'
-    },
-    header: {
-      flex: 10, backgroundColor: '#2196F3'
-    },
-    buttons: {
-      flex: 1, backgroundColor: '#8BC34A'
-    },
-    title: {
-        textAlign: 'center',
-        fontSize: 30,
-    },
-    byLine: {
-        textAlign: 'center'
-    },
-    button: {
-        marginBottom: 20
-    },
-    action: {
-        backgroundColor: "#5cb85c",
-    },
-    join: {
-        backgroundColor: "#f0ad4e",
-    },
-    info: {
-        backgroundColor: "#428bca",
-    }
+  layout: {
+    height: '100%',
+    padding: 30,
+    backgroundColor: '#438FCB',
+  },
+  header: {
+    fontFamily: 'Tahu!',
+    fontSize: 50,
+    color: '#fff',
+    textAlign: 'center',
+  },
+  subHeader: {
+    fontFamily: 'Tahu!',
+    fontSize: 20,
+    color: '#fff',
+    textAlign: 'center',
+  },
+  buttonContainer: {
+    flex: 1,
+    justifyContent: 'flex-end',
+    alignItems: 'center',
+  },
+  button: {
+    marginBottom: 20,
+    width: '100%',
+    borderRadius: 30,
+  },
+  text: {
+    fontFamily: 'Tahu!',
+  },
 });
