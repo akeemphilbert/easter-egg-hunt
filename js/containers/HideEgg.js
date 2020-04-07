@@ -15,14 +15,18 @@ const getUnplacedEggs = (eggs) => {
 
 const mapStateToProps = (state) => {
     return {
-        eggs: getUnplacedEggs(state.currentEggHunt.eggs)
+        unplacedEggs: getUnplacedEggs(state.currentEggHunt.eggs)
     }
 }
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        onHideEgg: (egg) => {
+        onHideEgg: (egg,position) => {
+            egg["position"] = position;
+        },
+        onComplete: (egg) => {
             dispatch(updateEgg(egg));
+
         }
     }
 }

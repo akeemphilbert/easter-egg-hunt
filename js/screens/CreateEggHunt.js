@@ -5,9 +5,9 @@ import {StyleSheet, SafeAreaView, View, Button, Text} from 'react-native';
 import EggList from "./EggList";
 import HideEggAR from "./HideEggWrapper";
 
-export default ({currentEggHunt, onHideEggs, navigation}) => {
+export default ({eggs, navigation}) => {
             return <SafeAreaView>
-                <EggList onHideEggs={onHideEggs} navigation={navigation}/>
+                <EggList eggs={eggs} navigation={navigation}/>
             </SafeAreaView>;
 
 }
