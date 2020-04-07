@@ -21,11 +21,9 @@ export default ({navigation}) => {
             style={styles.button}
             textStyle={styles.text}
             appearance="filled"
-            status="warning">
+            status="warning"
+            onPress={() => navigation.navigate('HuntStatus')}>
             Join Egg Hunt
-          </Button>
-          <Button style={styles.button} appearance="filled" status="info">
-            List of Hunts
           </Button>
         </View>
       </View>
