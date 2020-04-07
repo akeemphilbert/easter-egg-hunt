@@ -12,9 +12,8 @@ export default ({navigation}) => {
                     <Text style={styles.byLine}>By Wepala</Text>
                 </View>
                 <View>
-                    <Button title="Create Egg Hunt" onPress={() => navigation.navigate('CreateEggHunt')} />
-                    <Button title="Join Egg Hunt" />
-                    <Button title="List of Hunts" />
+                    <Button title="Create Egg Hunt" onPress={() => navigation.navigate("CreateEggHunt")} />
+                    <Button title="Join Egg Hunt" onPress={() => navigation.navigate("HuntStatus")} />
                 </View>
             </View>
         </SafeAreaView>
