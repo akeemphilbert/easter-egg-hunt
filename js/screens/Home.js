@@ -13,7 +13,7 @@ export default ({navigation}) => {
                 </View>
                 <View>
                     <Button title="Create Egg Hunt" onPress={() => navigation.navigate("CreateEggHunt")} />
-                    <Button title="Join Egg Hunt" onPress={() => navigation.navigate("HuntStatus")} />
+                    <Button title="Join Egg Hunt" onPress={() => navigation.navigate("StartHunt")} />
                 </View>
             </View>
         </SafeAreaView>

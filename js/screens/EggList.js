@@ -14,7 +14,7 @@ export default ({eggs,onPickEgg, navigation}) => {
             })
 
             }
-            <Button title="Invite Users" onPress={()=>navigation.navigate("Invite")}/>
+            <Button title="Finished Hiding Eggs" onPress={()=>navigation.navigate("Invite")}/>
         </SafeAreaView>
     )
 }
