@@ -2,7 +2,7 @@
 
 import React from 'react';
 import {StyleSheet, SafeAreaView, View, Text} from 'react-native';
-import {Button, Layout, Divider} from '@ui-kitten/components';
+import {Button} from '@ui-kitten/components';
 export default ({navigation}) => {
   return (
     <SafeAreaView>
@@ -19,7 +19,6 @@ export default ({navigation}) => {
           </Button>
           <Button
             style={styles.button}
-            textStyle={styles.text}
             appearance="filled"
             status="warning"
             onPress={() => navigation.navigate('HuntStatus')}>
@@ -58,8 +57,5 @@ const styles = StyleSheet.create({
     marginBottom: 20,
     width: '100%',
     borderRadius: 30,
-  },
-  text: {
-    fontFamily: 'Tahu!',
   },
 });
