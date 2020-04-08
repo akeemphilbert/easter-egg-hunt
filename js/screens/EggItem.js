@@ -7,13 +7,7 @@ const EggItem = ({egg, onPickEgg, navigation}) => {
     <Card
       header={() => (
         <React.Fragment>
-          <Image
-            style={styles.image}
-            source={{
-              uri:
-                'https://images.vexels.com/media/users/3/131917/isolated/preview/343f36669c2fcf5c750a22a62f4783fc-rhombs-dots-easter-egg-by-vexels.png',
-            }}
-          />
+          <Image style={styles.image} source={egg.image} />
           <View styles={styles.egg}></View>
           <Text style={styles.title} category="h6">
             {egg.title}
@@ -25,15 +19,6 @@ const EggItem = ({egg, onPickEgg, navigation}) => {
   );
 };
 const styles = StyleSheet.create({
-  egg: {
-    width: 38,
-    height: 45,
-    backgroundColor: 'red',
-    borderTopLeftRadius: 100,
-    borderTopRightRadius: 100,
-    borderBottomLeftRadius: 100,
-    borderBottomRightRadius: 100,
-  },
   card: {
     borderWidth: 0,
     padding: 0,
@@ -42,12 +27,26 @@ const styles = StyleSheet.create({
   },
   title: {
     margin: 0,
+    fontSize: 20,
+    fontFamily: 'Tahu!',
     textAlign: 'center',
   },
   image: {
-    // backgroundColor: '#333',
+    width: 80,
     height: 100,
-    width: '100%',
+    borderWidth: 2,
+    borderColor: '#f6f6f6',
+    borderRadius: 200,
+    borderTopLeftRadius: 100,
+    borderTopRightRadius: 100,
+    borderBottomLeftRadius: 85,
+    borderBottomRightRadius: 85,
+  },
+  egg: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#F5FCFF',
   },
 });
 

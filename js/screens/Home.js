@@ -1,7 +1,7 @@
 'use strict';
 
 import React from 'react';
-import {StyleSheet, SafeAreaView, View, Text, Image} from 'react-native';
+import {StyleSheet, SafeAreaView, View, Text} from 'react-native';
 import {Button} from '@ui-kitten/components';
 import SvgUri from 'react-native-svg-uri';
 
