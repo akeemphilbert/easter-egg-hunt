@@ -12,9 +12,13 @@ const eggsInBasket = (eggs) => {
     return Object.values(eggs).filter(e => e.position === undefined)
 };
 
+
 const mapStateToProps = (state) => {
+    const eggsFound = eggsInBasket(state.currentEggHunt.eggs);
     return {
-        eggsFound: eggsInBasket(state.currentEggHunt.eggs)
+        eggsFound: eggsFound,
+        start: state.location,
+        allEggsFound: eggsFound.length === state.currentEggHunt.eggs.length
     }
 };
 

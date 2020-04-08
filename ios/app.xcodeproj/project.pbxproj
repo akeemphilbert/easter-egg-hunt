@@ -20,6 +20,14 @@
 		91FD661F3775B01E6E8EEDA9 /* libPods-app.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 65911A4FFA6D81B69A48F731 /* libPods-app.a */; };
 		F1F6D1411C6068C33DFADACB /* libPods-app-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C4309CDA25220DF0DC322567 /* libPods-app-tvOSTests.a */; };
 		F4792221C84E8F8218CA907F /* libPods-app-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FD75CB3B202175D35DF968C /* libPods-app-tvOS.a */; };
+		DE27FEA6359B47E7880BA32E /* Special Valentine.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3164ECBBF2264E11829524F9 /* Special Valentine.ttf */; };
+		7C5FB99F98FA4532A44FC42A /* antfill.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E89A1C0616B542298CA41BF2 /* antfill.ttf */; };
+		8F5491FBA4B146C09AF1C421 /* antoutline.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42EC0C80EBE0403E98FAC29C /* antoutline.ttf */; };
+		6C44B8ED10BA42E597D9B13B /* Camsia.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6E6361D8BC6D4E49889A86DF /* Camsia.ttf */; };
+		93E17F27C67D41758F541E1B /* Pallistha.otf in Resources */ = {isa = PBXBuildFile; fileRef = DAFAFD7BF4C04186AFD52FFF /* Pallistha.otf */; };
+		C8EDC9E68EF24C8590BF362B /* Tahu!.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8076FFB1E71A44548FF0578E /* Tahu!.ttf */; };
+		909CF64CAC144D07B82357D2 /* Homework.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5846081E7BDE4127A25073C1 /* Homework.ttf */; };
+		7AD8FB2D17A6469CA7C9505B /* Wakeup.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B5F09CDEF46149B49383C7EC /* Wakeup.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +75,14 @@
 		D5C746D49FEA01B8EF6BF0EB /* Pods-app-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-app-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-app-tvOSTests/Pods-app-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
+		3164ECBBF2264E11829524F9 /* Special Valentine.ttf */ = {isa = PBXFileReference; name = "Special Valentine.ttf"; path = "../assets/fonts/Special Valentine.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E89A1C0616B542298CA41BF2 /* antfill.ttf */ = {isa = PBXFileReference; name = "antfill.ttf"; path = "../node_modules/@ant-design/icons-react-native/fonts/antfill.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		42EC0C80EBE0403E98FAC29C /* antoutline.ttf */ = {isa = PBXFileReference; name = "antoutline.ttf"; path = "../node_modules/@ant-design/icons-react-native/fonts/antoutline.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6E6361D8BC6D4E49889A86DF /* Camsia.ttf */ = {isa = PBXFileReference; name = "Camsia.ttf"; path = "../assets/fonts/Camsia.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		DAFAFD7BF4C04186AFD52FFF /* Pallistha.otf */ = {isa = PBXFileReference; name = "Pallistha.otf"; path = "../assets/fonts/Pallistha.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8076FFB1E71A44548FF0578E /* Tahu!.ttf */ = {isa = PBXFileReference; name = "Tahu!.ttf"; path = "../assets/fonts/Tahu!.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5846081E7BDE4127A25073C1 /* Homework.ttf */ = {isa = PBXFileReference; name = "Homework.ttf"; path = "../assets/fonts/Homework.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B5F09CDEF46149B49383C7EC /* Wakeup.ttf */ = {isa = PBXFileReference; name = "Wakeup.ttf"; path = "../assets/fonts/Wakeup.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +197,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				26CE14BE881D9AF4FC65926D /* Pods */,
+				A077871C837B4912B9877769 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -197,6 +214,22 @@
 			);
 			name = Products;
 			sourceTree = "<group>";
+		};
+		A077871C837B4912B9877769 /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				3164ECBBF2264E11829524F9 /* Special Valentine.ttf */,
+				E89A1C0616B542298CA41BF2 /* antfill.ttf */,
+				42EC0C80EBE0403E98FAC29C /* antoutline.ttf */,
+				6E6361D8BC6D4E49889A86DF /* Camsia.ttf */,
+				DAFAFD7BF4C04186AFD52FFF /* Pallistha.otf */,
+				8076FFB1E71A44548FF0578E /* Tahu!.ttf */,
+				5846081E7BDE4127A25073C1 /* Homework.ttf */,
+				B5F09CDEF46149B49383C7EC /* Wakeup.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -340,6 +373,14 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				DE27FEA6359B47E7880BA32E /* Special Valentine.ttf in Resources */,
+				7C5FB99F98FA4532A44FC42A /* antfill.ttf in Resources */,
+				8F5491FBA4B146C09AF1C421 /* antoutline.ttf in Resources */,
+				6C44B8ED10BA42E597D9B13B /* Camsia.ttf in Resources */,
+				93E17F27C67D41758F541E1B /* Pallistha.otf in Resources */,
+				C8EDC9E68EF24C8590BF362B /* Tahu!.ttf in Resources */,
+				909CF64CAC144D07B82357D2 /* Homework.ttf in Resources */,
+				7AD8FB2D17A6469CA7C9505B /* Wakeup.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
