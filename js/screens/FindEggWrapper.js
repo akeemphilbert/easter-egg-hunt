@@ -114,22 +114,20 @@ export default class FindEggWrapper extends Component {
       });
 
       return (
-        <View>
-          <ViroARScene>
-            <ViroAmbientLight color="#FFFFFF" />
-            {Object.values(this.state.eggs).map((egg, key) => {
-              return (
-                <ViroSphere
-                  position={egg.position}
-                  materials={[egg.eggId]}
-                  scale={[0.3, 0.3, 0.1]}
-                  onClick={() => this.props.onFindEgg(egg)}
-                  key={key}
-                />
-              );
-            })}
-          </ViroARScene>
-        </View>
+        <ViroARScene>
+          <ViroAmbientLight color="#FFFFFF" />
+          {Object.values(this.state.eggs).map((egg, key) => {
+            return (
+              <ViroSphere
+                position={egg.position}
+                materials={[egg.eggId]}
+                scale={[0.3, 0.3, 0.1]}
+                onClick={() => this.props.onFindEgg(egg)}
+                key={key}
+              />
+            );
+          })}
+        </ViroARScene>
       );
     };
 

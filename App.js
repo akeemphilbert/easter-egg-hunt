@@ -5,7 +5,8 @@ import {createStackNavigator} from '@react-navigation/stack';
 import {Provider} from 'react-redux';
 
 import {ApplicationProvider} from '@ui-kitten/components';
-import {mapping, light as lightTheme} from '@eva-design/eva';
+import * as eva from '@eva-design/eva';
+import {default as theme} from './theme.json';
 
 //store
 import store from './js/store';
@@ -22,16 +23,55 @@ const Stack = createStackNavigator();
 export default class App extends Component {
   render() {
     return (
-      <ApplicationProvider mapping={mapping} theme={lightTheme}>
+      <ApplicationProvider {...eva} theme={{...eva.light, ...theme}}>
         <Provider store={store}>
           <NavigationContainer>
-            <Stack.Navigator screenOptions={{headerShown: false}}>
-              <Stack.Screen name="Home" component={HomeScreen} />
-              <Stack.Screen name="CreateEggHunt" component={EggList} />
-              <Stack.Screen name="HideEgg" component={HideEgg} />
-              <Stack.Screen name="Invite" component={Invite} />
-              <Stack.Screen name="FindEgg" component={FindEgg} />
-              <Stack.Screen name="StartHunt" component={HuntStatus} />
+            <Stack.Navigator screenOptions={{headerShown: true}}>
+              <Stack.Screen
+                name="Home"
+                component={HomeScreen}
+                options={{headerShown: false}}
+              />
+              <Stack.Screen
+                name="CreateEggHunt"
+                component={EggList}
+                options={{
+                  ...headerOptions,
+                  title: 'Create Egg Hunt!',
+                }}
+              />
+              <Stack.Screen
+                name="HideEgg"
+                component={HideEgg}
+                options={{
+                  ...headerOptions,
+                  title: 'Hide Egg',
+                }}
+              />
+              <Stack.Screen
+                name="Invite"
+                component={Invite}
+                options={{
+                  ...headerOptions,
+                  title: 'Invite Friends!',
+                }}
+              />
+              <Stack.Screen
+                name="FindEgg"
+                component={FindEgg}
+                options={{
+                  ...headerOptions,
+                  title: 'Find Egg!',
+                }}
+              />
+              <Stack.Screen
+                name="StartHunt"
+                component={HuntStatus}
+                options={{
+                  ...headerOptions,
+                  title: 'Start Hunt!',
+                }}
+              />
             </Stack.Navigator>
           </NavigationContainer>
         </Provider>
@@ -39,3 +79,15 @@ export default class App extends Component {
     );
   }
 }
+
+const headerOptions = {
+  title: 'Title',
+  headerStyle: {
+    backgroundColor: '#438FCB',
+  },
+  headerTintColor: '#fff',
+  headerTitleStyle: {
+    fontFamily: 'Tahu!',
+    fontSize: 25,
+  },
+};

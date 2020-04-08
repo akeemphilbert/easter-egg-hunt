@@ -12,10 +12,10 @@ export default ({eggs, onPickEgg, navigation}) => {
   const items = Object.values(eggs);
   return (
     <SafeAreaView style={styles.layout}>
-      <View style={{paddingBottom: 10}}>
+      {/* <View style={{paddingBottom: 10}}>
         <Text style={styles.header}>Choose Eggs!</Text>
         <Text style={styles.subHeader}>10 Eggs added to basket</Text>
-      </View>
+      </View> */}
       <FlatGrid
         fadingEdgeLength={20}
         showsVerticalScrollIndicator={true}

@@ -21,7 +21,7 @@ export default ({navigation}) => {
             style={styles.button}
             appearance="filled"
             status="warning"
-            onPress={() => navigation.navigate('HuntStatus')}>
+            onPress={() => navigation.navigate('StartHunt')}>
             Join Egg Hunt
           </Button>
         </View>
