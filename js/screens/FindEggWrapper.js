@@ -20,7 +20,7 @@ import {
   Alert,
 } from 'react-native';
 import Geolocation from '@react-native-community/geolocation';
-import {requestLocatePermission, getDistance} from '../helpers';
+import {requestLocatePermission, calculateDistance} from '../helpers';
 
 export default class FindEggWrapper extends Component {
   state = {
@@ -43,54 +43,29 @@ export default class FindEggWrapper extends Component {
         (error) => console.log('error occured during find location', error),
         {enableHighAccuracy: true, timeout: 20000, maximumAge: 10000},
       );
-      this.watchID = Geolocation.watchPosition(
-        (position) => {
-          console.log('updated position', position);
-          this.showEggsThatAreNear(position.coords);
-        },
-        (error) => console.log('error occured during find location', error),
-        {
-          enableHighAccuracy: true,
-          timeout: 10000,
-          maximumAge: 1000,
-          distanceFilter: 1,
-          interval: 2000,
-          fastestInterval: 1000,
-        },
-      );
     });
   }
 
   /**
    * Update the component state based on the eggs that are near
    *
-   * @param coords
+   * @param position
    */
-  showEggsThatAreNear(coords) {
+  showEggsThatAreNear(position) {
     //use some formula to find the eggs that are near
-    console.log('eggs to search for', this.props.hiddenEggs);
+    console.log('eggs to search for',position, this.props.hiddenEggs);
     let eggs = this.props.hiddenEggs.filter((e) =>
       e.location !== undefined
-        ? getDistance(
-            coords.latitude,
-            coords.longitude,
-            e.location.latitude,
-            e.location.longitude,
+        ? calculateDistance(
+            position,
+            e.position
           ) < 4
         : true,
     );
-    if (this.props.hiddenEggs[0].location !== undefined) {
-      console.log(
-        'eggs near me',
-        eggs,
-        getDistance(
-          coords.latitude,
-          coords.longitude,
-          this.props.hiddenEggs[0].location.latitude,
-          this.props.hiddenEggs[0].location.longitude,
-        ),
-      );
-    }
+
+    console.log("distance",calculateDistance(this.props.hiddenEggs[0].position, position));
+
+    console.log("eggs to find",eggs.length)
 
     if (this.state.eggs.length !== eggs.length) {
       this.setState({eggs: eggs});
@@ -114,7 +89,7 @@ export default class FindEggWrapper extends Component {
       });
 
       return (
-        <ViroARScene>
+        <ViroARScene onCameraTransformUpdate={(ct)=>{this.showEggsThatAreNear(ct.position)}}>
           <ViroAmbientLight color="#FFFFFF" />
           {Object.values(this.state.eggs).map((egg, key) => {
             return (

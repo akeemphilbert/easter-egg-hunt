@@ -27,15 +27,11 @@ export default class HideEggWrapper extends Component {
                 error => console.log("error getting position",error),
                 {enableHighAccuracy: true, timeout: 20000, maximumAge: 1000},
             );
-            // this.watchID = Geolocation.watchPosition(position => {
-            //     console.log("updated current egg position",position);
-            //     this.props.updateBunnyPosition(this.props.unplacedEggs[0],position.coords);
-            // });
         })
     }
 
     componentWillUnmount() {
-        this.watchID != null && Geolocation.clearWatch(this.watchID);
+
     }
 
     render() {

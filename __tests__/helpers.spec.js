@@ -1,7 +1,7 @@
-import {getDistance} from "../js/helpers";
+import {getDistance,calculateDistance} from "../js/helpers";
 
 describe("helpers test", () => {
-    it("should get distance between 2 points", () => {
+    it("should get geo distance between 2 points", () => {
         let mocks = [
             {
                 position1: {
@@ -28,6 +28,23 @@ describe("helpers test", () => {
             //the distance I calculated on google map between these points was 64.64 meters. This test is to make sure we're in a margin of error of 4 meters of that
             expect(d).toBeLessThan(mocks[i].distance+ 4);
             expect(d).toBeGreaterThan(mocks[i].distance - 4);
+        }
+
+    })
+
+    it("should get distance between 2 points", () => {
+        let mocks = [
+            {
+                position1: [-0.0004760660231113434,-1.0001294612884521,0.00021535158157348633],
+                position2: [0,0,0],
+                distance: 1.0001295977783538
+            }
+        ];
+
+        for (let i in mocks) {
+            let d = calculateDistance(mocks[i].position1,mocks[i].position2 );
+            expect(d).toBe(mocks[i].distance);
+
         }
 
     })

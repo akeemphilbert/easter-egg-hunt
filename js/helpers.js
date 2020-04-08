@@ -22,6 +22,13 @@ export const requestLocatePermission = async () => {
         console.warn(err);
     }
 };
+export const  calculateDistance = (p1, p2) => {
+    let a = p2[0] - p1[0];
+    let b = p2[1] - p1[1];
+    let c = p2[2] - p1[2];
+
+    return Math.hypot(a, b, c);
+}
 /**
  * Get the distance between two points returned in meters
  *
@@ -49,24 +56,5 @@ export const getDistance = (latitude1, longitude1, latitude2, longitude2) => {
         dist = dist * 60 * 1.1515;
 
         return dist * 1.609344*1000;
-
-        /*
-        let earthRadius = 6371000,
-            decimals = 2,
-            dLat = (parseFloat(latitude1) - parseFloat(latitude2)).toRad(),
-            dLng = (parseFloat(longitude1) - parseFloat(longitude2)).toRad(),
-            toLat = parseFloat(latitude2),
-            toLng = parseFloat(longitude2),
-            fromLat = parseFloat(latitude1),
-
-            a = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
-                Math.sin(dLng / 2) * Math.sin(dLng / 2) * Math.cos(toLat) *
-                Math.cos(fromLat),
-            b = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a)),
-            c = earthRadius * b,
-            d = (Math.round(c * Math.pow (10, decimals)) /
-                Math.pow(10, decimals)) * 1000;
-            return d;
-         */
     }
 };

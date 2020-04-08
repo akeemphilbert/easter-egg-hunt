@@ -7,15 +7,23 @@ import {FlatGrid} from 'react-native-super-grid';
 
 import EggItem from './EggItem';
 import {addHuntEggs} from '../actions';
+import {requestLocatePermission} from "../helpers";
+import Geolocation from "@react-native-community/geolocation";
 
-export default ({eggs, onPickEgg, navigation}) => {
+export default ({eggs, onPickEgg,updateStartPosition, navigation}) => {
   const items = Object.values(eggs);
+  requestLocatePermission().then(()=>{
+    Geolocation.getCurrentPosition(
+        position => {
+          console.log("start position",position);
+          updateStartPosition(position.coords);
+        },
+        error => console.log("error getting position",error),
+        {enableHighAccuracy: true, timeout: 20000, maximumAge: 1000},
+    );
+  });
   return (
     <SafeAreaView style={styles.layout}>
-      {/* <View style={{paddingBottom: 10}}>
-        <Text style={styles.header}>Choose Eggs!</Text>
-        <Text style={styles.subHeader}>10 Eggs added to basket</Text>
-      </View> */}
       <FlatGrid
         fadingEdgeLength={20}
         showsVerticalScrollIndicator={true}
