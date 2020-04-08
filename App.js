@@ -31,7 +31,7 @@ export default class App extends Component {
               <Stack.Screen name="HideEgg" component={HideEgg} />
               <Stack.Screen name="Invite" component={Invite} />
               <Stack.Screen name="FindEgg" component={FindEgg} />
-              <Stack.Screen name="HuntStatus" component={HuntStatus} />
+              <Stack.Screen name="StartHunt" component={HuntStatus} />
             </Stack.Navigator>
           </NavigationContainer>
         </Provider>
