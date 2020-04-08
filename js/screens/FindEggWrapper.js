@@ -1,7 +1,9 @@
 import React, {Component} from 'react';
 import {ViroARScene, ViroARSceneNavigator, ViroText, Viro3DObject, ViroAmbientLight, ViroBox,ViroMaterials, ViroSphere,ViroNode} from "react-viro";
-import {StyleSheet, SafeAreaView, View, Button, Text} from 'react-native';
+import {StyleSheet, SafeAreaView, View, Button, Text,PermissionsAndroid, Alert} from 'react-native';
 import Geolocation from '@react-native-community/geolocation';
+
+
 
 export default class FindEggWrapper extends Component {
 
@@ -17,18 +19,41 @@ export default class FindEggWrapper extends Component {
     watchID = null;
 
     componentDidMount() {
-        Geolocation.getCurrentPosition(
-            position => {
-                const initialPosition = JSON.stringify(position);
-                this.setState({initialPosition});
-            },
-            error => Alert.alert('Error', JSON.stringify(error)),
-            {enableHighAccuracy: true, timeout: 20000, maximumAge: 1000},
-        );
-        this.watchID = Geolocation.watchPosition(position => {
-            const lastPosition = JSON.stringify(position);
-            this.setState({lastPosition});
-        });
+        const requestLocatePermission = async () => {
+            try {
+                const granted = await PermissionsAndroid.request(
+                    PermissionsAndroid.PERMISSIONS.ACCESS_FINE_LOCATION,
+                    {
+                        title: "Easter egg hunt location permission",
+                        message:
+                            "The easter egg hunt app needs location data to allow for placing eggs in multiple locations",
+                        buttonNeutral: "Ask Me Later",
+                        buttonNegative: "Cancel",
+                        buttonPositive: "OK"
+                    }
+                );
+                if (granted === PermissionsAndroid.RESULTS.GRANTED) {
+                    console.log("You can now place eggs");
+                } else {
+                    console.log("Location permission denied");
+                }
+            } catch (err) {
+                console.warn(err);
+            }
+        };
+
+        requestLocatePermission().then(()=>{
+            Geolocation.getCurrentPosition(
+                position => {
+                  console.log("start position",position);
+                },
+                error => Alert.alert('Error', JSON.stringify(error)),
+                {enableHighAccuracy: true, timeout: 20000, maximumAge: 1000},
+            );
+            this.watchID = Geolocation.watchPosition(position => {
+                console.log("updated position",position);
+            });
+        })
     }
 
     componentWillUnmount() {
@@ -38,7 +63,7 @@ export default class FindEggWrapper extends Component {
     render() {
 
         const EggFinder = () => {
-            console.log("unplaced eggs",this.props.hiddenEggs)
+            console.log("hidden eggs",this.props.hiddenEggs.length)
 
             //because of the limitation of require all the eggs will need to be mapped here
             ViroMaterials.createMaterials({

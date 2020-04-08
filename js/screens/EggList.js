@@ -35,7 +35,7 @@ export default ({eggs, onPickEgg, navigation}) => {
           style={styles.button}
           appearance="primary"
           onPress={() => navigation.navigate('Invite')}>
-          Invite Users
+          Finished Hiding Eggs
         </Button>
       </View>
     </SafeAreaView>

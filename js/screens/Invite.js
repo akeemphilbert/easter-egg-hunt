@@ -7,7 +7,7 @@ export default ({currentEggHunt, navigation}) => {
     return (
         <SafeAreaView>
             <Button title="Invite Users" onPress={() => {}}  />
-            <Button title="Start Hunt" onPress={() => {}}  />
+            <Button title="Start Hunt" onPress={() => {navigation.navigate("StartHunt")}}  />
         </SafeAreaView>
     )
 }
