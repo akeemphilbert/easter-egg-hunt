@@ -55,7 +55,7 @@ export default class FindEggWrapper extends Component {
     //use some formula to find the eggs that are near
     console.log('eggs to search for',position, this.props.hiddenEggs);
     let eggs = this.props.hiddenEggs.filter((e) =>
-      e.location !== undefined
+      e.position !== undefined
         ? calculateDistance(
             position,
             e.position
@@ -63,7 +63,10 @@ export default class FindEggWrapper extends Component {
         : true,
     );
 
-    console.log("distance",calculateDistance(this.props.hiddenEggs[0].position, position));
+    if (this.props.hiddenEggs.length > 0 && this.props.hiddenEggs[0].position !== undefined) {
+      console.log("distance",calculateDistance(this.props.hiddenEggs[0].position, position));
+    }
+
 
     console.log("eggs to find",eggs.length)
 
@@ -77,6 +80,9 @@ export default class FindEggWrapper extends Component {
   }
 
   render() {
+    if (this.props.hiddenEggs.length === 0) {
+      this.props.navigation.navigate("StartHunt");
+    }
     const EggFinder = () => {
       //because of the limitation of require all the eggs will need to be mapped here
       ViroMaterials.createMaterials({
@@ -90,7 +96,7 @@ export default class FindEggWrapper extends Component {
 
       return (
         <ViroARScene onCameraTransformUpdate={(ct)=>{this.showEggsThatAreNear(ct.position)}}>
-          <ViroAmbientLight color="#FFFFFF" />
+          <ViroAmbientLight color="#FFFFFF" intensity={20}/>
           {Object.values(this.state.eggs).map((egg, key) => {
             return (
               <ViroSphere

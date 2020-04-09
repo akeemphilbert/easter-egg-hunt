@@ -56,7 +56,7 @@ export default class HuntStatus extends Component {
     return (
         <SafeAreaView style={styles.layout}>
           <Text style={styles.subHeader}>Eggs You've Found</Text>
-          <Text style={styles.header}>{this.props.eggsFound.length}!</Text>
+          <Text style={styles.header}>{this.props.eggsFound.length} out of {this.props.totalEggs}!</Text>
           <View style={styles.image}>
             <SvgUri
                 width="240"

@@ -15,10 +15,12 @@ const eggsInBasket = (eggs) => {
 
 const mapStateToProps = (state) => {
     const eggsFound = eggsInBasket(state.currentEggHunt.eggs);
+    const totalEggs = Object.keys(state.currentEggHunt.eggs).length;
     return {
         eggsFound: eggsFound,
         start: state.location,
-        allEggsFound: eggsFound.length === state.currentEggHunt.eggs.length
+        allEggsFound: eggsFound.length === totalEggs,
+        totalEggs : totalEggs
     }
 };
 

@@ -49,7 +49,7 @@ export default class HideEggWrapper extends Component {
 
             return (
                 <ViroARScene>
-                    <ViroAmbientLight color="#FFFFFF" />
+                    <ViroAmbientLight color="#FFFFFF" intensity={20} />
                     <ViroNode position={[0,-1,0]} dragType="FixedToWorld" onDrag={(dragToPos)=>this.props.onHideEgg(this.props.unplacedEggs[0],dragToPos)} onClick={()=> this.props.onComplete(this.props.unplacedEggs[0],this.props.location)}>
                         <ViroSphere
                             position={[0, -.5, -1]}
