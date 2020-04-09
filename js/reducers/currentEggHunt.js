@@ -1,4 +1,4 @@
-import { FETCH_EGGS, ADD_HUNT_EGGS, UPDATE_HUNT_EGG,RESET_EGGS} from "../actionTypes";
+import { FETCH_EGGS, ADD_HUNT_EGGS, UPDATE_HUNT_EGG,RESET_EGGS, RESET_HUNT} from "../actionTypes";
 import 'react-native-get-random-values';
 import { v4 as uuidv4 } from 'uuid';
 
@@ -25,6 +25,8 @@ export default (state = { eggs:{}, loading: null, error:null }, action ) => {
                 eggs[i].hidden = true
             }
             return {...state,eggs:eggs};
+        case RESET_HUNT:
+            return {...state,eggs:{}};
         default:
             return state;
     }

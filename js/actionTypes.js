@@ -7,3 +7,5 @@ export const ADD_HUNT_EGGS = "ADD_HUNT_EGGS";
 export const UPDATE_HUNT_EGG = "UPDATE_HUNT_EGG";
 export const UPDATE_LOCATION = "UPDATE_LOCATION";
 export const RESET_EGGS = 'RESET_EGGS';
+export const RESET_HUNT = 'RESET';
+export const RESET_LOCATION = 'RESET_LOCATION';

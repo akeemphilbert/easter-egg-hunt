@@ -1,4 +1,4 @@
-import {ADD_HUNT_EGGS, UPDATE_HUNT_EGG, UPDATE_LOCATION,RESET_EGGS} from "./actionTypes";
+import {ADD_HUNT_EGGS, UPDATE_HUNT_EGG, UPDATE_LOCATION, RESET_EGGS, RESET_HUNT, RESET_LOCATION} from "./actionTypes";
 
 export const addHuntEggs = (egg,amt) => {
     return {
@@ -24,8 +24,21 @@ export const updateLocation = (position) => {
     }
 };
 
-export const resetEggs = () => {
-  return {
-    type: RESET_EGGS
-  };
+export const resetLocation = () => {
+    return {
+        type: RESET_LOCATION
+    }
 };
+
+export const resetEggs = () => {
+    return {
+        type: RESET_EGGS
+    };
+};
+
+export const reset = () => {
+    return {
+        type: RESET_HUNT
+    };
+};
+

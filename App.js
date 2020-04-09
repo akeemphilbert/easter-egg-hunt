@@ -11,7 +11,7 @@ import {default as theme} from './theme.json';
 //store
 import store from './js/store';
 //screens
-import HomeScreen from './js/screens/Home';
+import Home from './js/containers/Home';
 import EggList from './js/containers/EggList';
 import HideEgg from './js/containers/HideEgg';
 import Invite from './js/containers/Invite';
@@ -29,7 +29,7 @@ export default class App extends Component {
             <Stack.Navigator screenOptions={{headerShown: true}}>
               <Stack.Screen
                 name="Home"
-                component={HomeScreen}
+                component={Home}
                 options={{headerShown: false}}
               />
               <Stack.Screen
