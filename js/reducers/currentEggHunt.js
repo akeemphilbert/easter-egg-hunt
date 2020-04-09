@@ -1,4 +1,4 @@
-import { FETCH_EGGS, ADD_HUNT_EGGS, UPDATE_HUNT_EGG} from "../actionTypes";
+import { FETCH_EGGS, ADD_HUNT_EGGS, UPDATE_HUNT_EGG,RESET_EGGS} from "../actionTypes";
 import 'react-native-get-random-values';
 import { v4 as uuidv4 } from 'uuid';
 
@@ -11,7 +11,7 @@ export default (state = { eggs:{}, loading: null, error:null }, action ) => {
             //lets setup the array of eggs
             for (let i=0; i<action.payload.amt; i++) {
                 let uuid = uuidv4()
-                newState.eggs[uuid] = {...action.payload.egg,id:uuid,eggId:action.payload.egg.id}
+                newState.eggs[uuid] = {...action.payload.egg,id:uuid,eggId:action.payload.egg.id,hidden:true}
             }
 
             return newState;
@@ -19,6 +19,12 @@ export default (state = { eggs:{}, loading: null, error:null }, action ) => {
             let newState2 = Object.assign({},state,)
             newState2.eggs[action.payload.id] = Object.assign({},state.eggs[action.payload.id],action.payload)
             return newState2;
+        case RESET_EGGS:
+            let eggs = {...state.eggs}
+            for (let i in eggs) {
+                eggs[i].hidden = true
+            }
+            return {...state,eggs:eggs};
         default:
             return state;
     }

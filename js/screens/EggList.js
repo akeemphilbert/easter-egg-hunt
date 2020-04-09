@@ -10,7 +10,7 @@ import {addHuntEggs} from '../actions';
 import {requestLocatePermission} from "../helpers";
 import Geolocation from "@react-native-community/geolocation";
 
-export default ({eggs, onPickEgg,updateStartPosition, navigation}) => {
+export default ({eggs, onPickEgg,updateStartPosition,total, navigation}) => {
   const items = Object.values(eggs);
   requestLocatePermission().then(()=>{
     Geolocation.getCurrentPosition(
@@ -24,6 +24,9 @@ export default ({eggs, onPickEgg,updateStartPosition, navigation}) => {
   });
   return (
     <SafeAreaView style={styles.layout}>
+      <Text style={styles.header}>
+        {total} eggs hidden. Hehehe!
+      </Text>
       <FlatGrid
         fadingEdgeLength={20}
         showsVerticalScrollIndicator={true}
@@ -76,6 +79,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   button: {
+    marginBottom: 10,
     width: '100%',
     borderRadius: 30,
   },
