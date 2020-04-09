@@ -45,7 +45,7 @@ export default class HideEggWrapper extends Component {
                     diffuseTexture: require('../res/eggs/1bd4b823-1beb-4468-b150-d93a1d6ae117.jpg'),
                 },
                 "150bb7f2-6264-48ee-9253-215a8780de4b": {
-                    diffuseTexture: require('../res/eggs/150bb7f2-6264-48ee-9253-215a8780de4b.jpg'),
+                    diffuseTexture: require('../res/eggs/92d3f8a6-06be-420a-9cac-621e13d60bbf.jpg'),
                 },
                 "ccccbd4d-4bf0-45c8-88f4-bd182c7851f4": {
                     diffuseTexture: require('../res/eggs/ccccbd4d-4bf0-45c8-88f4-bd182c7851f4.jpg'),
