@@ -19,13 +19,6 @@ export default ({currentEggHunt, navigation}) => {
         <Button
           style={styles.button}
           appearance="filled"
-          status="success"
-          onPress={() => {}}>
-          Invite Users
-        </Button>
-        <Button
-          style={styles.button}
-          appearance="filled"
           status="warning"
           onPress={() => navigation.navigate('StartHunt')}>
           Start Hunt
