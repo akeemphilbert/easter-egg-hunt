@@ -72,6 +72,12 @@ export default class HuntStatus extends Component {
                 onPress={() => this.props.navigation.navigate('FindEgg')}>
               Find Eggs
             </Button>
+            <Button
+                style={styles.button}
+                status="danger"
+                onPress={() => this.props.resetEggs()}>
+              Reset Eggs
+            </Button>
           </View>
         </SafeAreaView>
     );

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00E356F31AD99517003FC87E /* appTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* appTests.m */; };
+		00E356F31AD99517003FC87E /* EasterEggHuntTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* EasterEggHuntTests.m */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
@@ -15,11 +15,11 @@
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		2DCD954D1E0B4F2C00145EB5 /* appTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* appTests.m */; };
-		7FAB3F97FACE14FBA0300FDB /* libPods-app-appTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D471613D2798478AD76577E /* libPods-app-appTests.a */; };
-		91FD661F3775B01E6E8EEDA9 /* libPods-app.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 65911A4FFA6D81B69A48F731 /* libPods-app.a */; };
-		F1F6D1411C6068C33DFADACB /* libPods-app-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C4309CDA25220DF0DC322567 /* libPods-app-tvOSTests.a */; };
-		F4792221C84E8F8218CA907F /* libPods-app-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FD75CB3B202175D35DF968C /* libPods-app-tvOS.a */; };
+		2DCD954D1E0B4F2C00145EB5 /* EasterEggHuntTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* EasterEggHuntTests.m */; };
+		7FAB3F97FACE14FBA0300FDB /* libPods-EasterEggHunt-EasterEggHuntTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D471613D2798478AD76577E /* libPods-EasterEggHunt-EasterEggHuntTests.a */; };
+		91FD661F3775B01E6E8EEDA9 /* libPods-EasterEggHunt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 65911A4FFA6D81B69A48F731 /* libPods-EasterEggHunt.a */; };
+		F1F6D1411C6068C33DFADACB /* libPods-EasterEggHunt-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C4309CDA25220DF0DC322567 /* libPods-EasterEggHunt-tvOSTests.a */; };
+		F4792221C84E8F8218CA907F /* libPods-EasterEggHunt-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FD75CB3B202175D35DF968C /* libPods-EasterEggHunt-tvOS.a */; };
 		DE27FEA6359B47E7880BA32E /* Special Valentine.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3164ECBBF2264E11829524F9 /* Special Valentine.ttf */; };
 		7C5FB99F98FA4532A44FC42A /* antfill.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E89A1C0616B542298CA41BF2 /* antfill.ttf */; };
 		8F5491FBA4B146C09AF1C421 /* antoutline.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42EC0C80EBE0403E98FAC29C /* antoutline.ttf */; };
@@ -36,45 +36,45 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = app;
+			remoteInfo = EasterEggHunt;
 		};
 		2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 2D02E47A1E0B4A5D006451C7;
-			remoteInfo = "app-tvOS";
+			remoteInfo = "EasterEggHunt-tvOS";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
-		00E356EE1AD99517003FC87E /* appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = appTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* EasterEggHuntTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrEasterEggHunter.cfbundle; includeInIndex = 0; path = EasterEggHuntTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* appTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = appTests.m; sourceTree = "<group>"; };
-		0FD75CB3B202175D35DF968C /* libPods-app-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-app-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07F961A680F5B00A75B9A /* app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = app.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = app/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = app/AppDelegate.m; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* EasterEggHuntTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EasterEggHuntTests.m; sourceTree = "<group>"; };
+		0FD75CB3B202175D35DF968C /* libPods-EasterEggHunt-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EasterEggHunt-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07F961A680F5B00A75B9A /* EasterEggHunt.EasterEggHunt */ = {isa = PBXFileReference; explicitFileType = wrEasterEggHunter.EasterEggHuntlication; includeInIndex = 0; path = EasterEggHunt.EasterEggHunt; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = EasterEggHunt/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = EasterEggHunt/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = app/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = app/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = app/main.m; sourceTree = "<group>"; };
-		277D74D298524CD0996C5398 /* Pods-app-appTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-app-appTests.release.xcconfig"; path = "Target Support Files/Pods-app-appTests/Pods-app-appTests.release.xcconfig"; sourceTree = "<group>"; };
-		2D02E47B1E0B4A5D006451C7 /* app-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "app-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D02E4901E0B4A5D006451C7 /* app-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "app-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D471613D2798478AD76577E /* libPods-app-appTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-app-appTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3503D8A6D12F44A06BD9349E /* Pods-app-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-app-tvOS.release.xcconfig"; path = "Target Support Files/Pods-app-tvOS/Pods-app-tvOS.release.xcconfig"; sourceTree = "<group>"; };
-		37F2B25372A024BD1B8591B7 /* Pods-app-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-app-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-app-tvOS/Pods-app-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		3B900F475B59107DDF786688 /* Pods-app-appTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-app-appTests.debug.xcconfig"; path = "Target Support Files/Pods-app-appTests/Pods-app-appTests.debug.xcconfig"; sourceTree = "<group>"; };
-		65911A4FFA6D81B69A48F731 /* libPods-app.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-app.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A025641DE11E4B3AD0C83DB1 /* Pods-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-app.release.xcconfig"; path = "Target Support Files/Pods-app/Pods-app.release.xcconfig"; sourceTree = "<group>"; };
-		C4309CDA25220DF0DC322567 /* libPods-app-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-app-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CB2D5E2FFFF159B99016A478 /* Pods-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-app.debug.xcconfig"; path = "Target Support Files/Pods-app/Pods-app.debug.xcconfig"; sourceTree = "<group>"; };
-		D13F72B0766E33F991E0BB07 /* Pods-app-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-app-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-app-tvOSTests/Pods-app-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		D5C746D49FEA01B8EF6BF0EB /* Pods-app-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-app-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-app-tvOSTests/Pods-app-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = EasterEggHunt/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = EasterEggHunt/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = EasterEggHunt/main.m; sourceTree = "<group>"; };
+		277D74D298524CD0996C5398 /* Pods-EasterEggHunt-EasterEggHuntTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasterEggHunt-EasterEggHuntTests.release.xcconfig"; path = "Target Support Files/Pods-EasterEggHunt-EasterEggHuntTests/Pods-EasterEggHunt-EasterEggHuntTests.release.xcconfig"; sourceTree = "<group>"; };
+		2D02E47B1E0B4A5D006451C7 /* EasterEggHunt-tvOS.EasterEggHunt */ = {isa = PBXFileReference; explicitFileType = wrEasterEggHunter.EasterEggHuntlication; includeInIndex = 0; path = "EasterEggHunt-tvOS.EasterEggHunt"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D02E4901E0B4A5D006451C7 /* EasterEggHunt-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrEasterEggHunter.cfbundle; includeInIndex = 0; path = "EasterEggHunt-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D471613D2798478AD76577E /* libPods-EasterEggHunt-EasterEggHuntTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EasterEggHunt-EasterEggHuntTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3503D8A6D12F44A06BD9349E /* Pods-EasterEggHunt-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasterEggHunt-tvOS.release.xcconfig"; path = "Target Support Files/Pods-EasterEggHunt-tvOS/Pods-EasterEggHunt-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		37F2B25372A024BD1B8591B7 /* Pods-EasterEggHunt-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasterEggHunt-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-EasterEggHunt-tvOS/Pods-EasterEggHunt-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		3B900F475B59107DDF786688 /* Pods-EasterEggHunt-EasterEggHuntTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasterEggHunt-EasterEggHuntTests.debug.xcconfig"; path = "Target Support Files/Pods-EasterEggHunt-EasterEggHuntTests/Pods-EasterEggHunt-EasterEggHuntTests.debug.xcconfig"; sourceTree = "<group>"; };
+		65911A4FFA6D81B69A48F731 /* libPods-EasterEggHunt.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EasterEggHunt.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A025641DE11E4B3AD0C83DB1 /* Pods-EasterEggHunt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasterEggHunt.release.xcconfig"; path = "Target Support Files/Pods-EasterEggHunt/Pods-EasterEggHunt.release.xcconfig"; sourceTree = "<group>"; };
+		C4309CDA25220DF0DC322567 /* libPods-EasterEggHunt-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EasterEggHunt-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB2D5E2FFFF159B99016A478 /* Pods-EasterEggHunt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasterEggHunt.debug.xcconfig"; path = "Target Support Files/Pods-EasterEggHunt/Pods-EasterEggHunt.debug.xcconfig"; sourceTree = "<group>"; };
+		D13F72B0766E33F991E0BB07 /* Pods-EasterEggHunt-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasterEggHunt-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-EasterEggHunt-tvOSTests/Pods-EasterEggHunt-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		D5C746D49FEA01B8EF6BF0EB /* Pods-EasterEggHunt-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasterEggHunt-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-EasterEggHunt-tvOSTests/Pods-EasterEggHunt-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrEasterEggHunter.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrEasterEggHunter.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		3164ECBBF2264E11829524F9 /* Special Valentine.ttf */ = {isa = PBXFileReference; name = "Special Valentine.ttf"; path = "../assets/fonts/Special Valentine.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		E89A1C0616B542298CA41BF2 /* antfill.ttf */ = {isa = PBXFileReference; name = "antfill.ttf"; path = "../node_modules/@ant-design/icons-react-native/fonts/antfill.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		42EC0C80EBE0403E98FAC29C /* antoutline.ttf */ = {isa = PBXFileReference; name = "antoutline.ttf"; path = "../node_modules/@ant-design/icons-react-native/fonts/antoutline.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
@@ -90,7 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7FAB3F97FACE14FBA0300FDB /* libPods-app-appTests.a in Frameworks */,
+				7FAB3F97FACE14FBA0300FDB /* libPods-EasterEggHunt-EasterEggHuntTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,7 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91FD661F3775B01E6E8EEDA9 /* libPods-app.a in Frameworks */,
+				91FD661F3775B01E6E8EEDA9 /* libPods-EasterEggHunt.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,7 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4792221C84E8F8218CA907F /* libPods-app-tvOS.a in Frameworks */,
+				F4792221C84E8F8218CA907F /* libPods-EasterEggHunt-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,20 +114,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1F6D1411C6068C33DFADACB /* libPods-app-tvOSTests.a in Frameworks */,
+				F1F6D1411C6068C33DFADACB /* libPods-EasterEggHunt-tvOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00E356EF1AD99517003FC87E /* appTests */ = {
+		00E356EF1AD99517003FC87E /* EasterEggHuntTests */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F21AD99517003FC87E /* appTests.m */,
+				00E356F21AD99517003FC87E /* EasterEggHuntTests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = appTests;
+			path = EasterEggHuntTests;
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -138,7 +138,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* app */ = {
+		13B07FAE1A68108700A75B9A /* EasterEggHunt */ = {
 			isa = PBXGroup;
 			children = (
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
@@ -149,20 +149,20 @@
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
-			name = app;
+			name = EasterEggHunt;
 			sourceTree = "<group>";
 		};
 		26CE14BE881D9AF4FC65926D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				CB2D5E2FFFF159B99016A478 /* Pods-app.debug.xcconfig */,
-				A025641DE11E4B3AD0C83DB1 /* Pods-app.release.xcconfig */,
-				3B900F475B59107DDF786688 /* Pods-app-appTests.debug.xcconfig */,
-				277D74D298524CD0996C5398 /* Pods-app-appTests.release.xcconfig */,
-				37F2B25372A024BD1B8591B7 /* Pods-app-tvOS.debug.xcconfig */,
-				3503D8A6D12F44A06BD9349E /* Pods-app-tvOS.release.xcconfig */,
-				D5C746D49FEA01B8EF6BF0EB /* Pods-app-tvOSTests.debug.xcconfig */,
-				D13F72B0766E33F991E0BB07 /* Pods-app-tvOSTests.release.xcconfig */,
+				CB2D5E2FFFF159B99016A478 /* Pods-EasterEggHunt.debug.xcconfig */,
+				A025641DE11E4B3AD0C83DB1 /* Pods-EasterEggHunt.release.xcconfig */,
+				3B900F475B59107DDF786688 /* Pods-EasterEggHunt-EasterEggHuntTests.debug.xcconfig */,
+				277D74D298524CD0996C5398 /* Pods-EasterEggHunt-EasterEggHuntTests.release.xcconfig */,
+				37F2B25372A024BD1B8591B7 /* Pods-EasterEggHunt-tvOS.debug.xcconfig */,
+				3503D8A6D12F44A06BD9349E /* Pods-EasterEggHunt-tvOS.release.xcconfig */,
+				D5C746D49FEA01B8EF6BF0EB /* Pods-EasterEggHunt-tvOSTests.debug.xcconfig */,
+				D13F72B0766E33F991E0BB07 /* Pods-EasterEggHunt-tvOSTests.release.xcconfig */,
 			);
 			name = Pods;
 			path = Pods;
@@ -173,10 +173,10 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				65911A4FFA6D81B69A48F731 /* libPods-app.a */,
-				2D471613D2798478AD76577E /* libPods-app-appTests.a */,
-				0FD75CB3B202175D35DF968C /* libPods-app-tvOS.a */,
-				C4309CDA25220DF0DC322567 /* libPods-app-tvOSTests.a */,
+				65911A4FFA6D81B69A48F731 /* libPods-EasterEggHunt.a */,
+				2D471613D2798478AD76577E /* libPods-EasterEggHunt-EasterEggHuntTests.a */,
+				0FD75CB3B202175D35DF968C /* libPods-EasterEggHunt-tvOS.a */,
+				C4309CDA25220DF0DC322567 /* libPods-EasterEggHunt-tvOSTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -191,9 +191,9 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				13B07FAE1A68108700A75B9A /* app */,
+				13B07FAE1A68108700A75B9A /* EasterEggHunt */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* appTests */,
+				00E356EF1AD99517003FC87E /* EasterEggHuntTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				26CE14BE881D9AF4FC65926D /* Pods */,
@@ -207,10 +207,10 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* app.app */,
-				00E356EE1AD99517003FC87E /* appTests.xctest */,
-				2D02E47B1E0B4A5D006451C7 /* app-tvOS.app */,
-				2D02E4901E0B4A5D006451C7 /* app-tvOSTests.xctest */,
+				13B07F961A680F5B00A75B9A /* EasterEggHunt.EasterEggHunt */,
+				00E356EE1AD99517003FC87E /* EasterEggHuntTests.xctest */,
+				2D02E47B1E0B4A5D006451C7 /* EasterEggHunt-tvOS.EasterEggHunt */,
+				2D02E4901E0B4A5D006451C7 /* EasterEggHunt-tvOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -234,9 +234,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* appTests */ = {
+		00E356ED1AD99517003FC87E /* EasterEggHuntTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "appTests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "EasterEggHuntTests" */;
 			buildPhases = (
 				06F1DBFBB9DDFF0B4B502D2F /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
@@ -248,14 +248,14 @@
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = appTests;
-			productName = appTests;
-			productReference = 00E356EE1AD99517003FC87E /* appTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
+			name = EasterEggHuntTests;
+			productName = EasterEggHuntTests;
+			productReference = 00E356EE1AD99517003FC87E /* EasterEggHuntTests.xctest */;
+			productType = "com.EasterEggHuntle.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* app */ = {
+		13B07F861A680F5B00A75B9A /* EasterEggHunt */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "app" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "EasterEggHunt" */;
 			buildPhases = (
 				36F17D3C4EF8619721ACBD2F /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
@@ -268,14 +268,14 @@
 			);
 			dependencies = (
 			);
-			name = app;
-			productName = app;
-			productReference = 13B07F961A680F5B00A75B9A /* app.app */;
-			productType = "com.apple.product-type.application";
+			name = EasterEggHunt;
+			productName = EasterEggHunt;
+			productReference = 13B07F961A680F5B00A75B9A /* EasterEggHunt.EasterEggHunt */;
+			productType = "com.EasterEggHuntle.product-type.EasterEggHuntlication";
 		};
-		2D02E47A1E0B4A5D006451C7 /* app-tvOS */ = {
+		2D02E47A1E0B4A5D006451C7 /* EasterEggHunt-tvOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "app-tvOS" */;
+			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "EasterEggHunt-tvOS" */;
 			buildPhases = (
 				CF3853E3EC8498EE511BBB63 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F122414F3F0027D42C /* Start Packager */,
@@ -288,14 +288,14 @@
 			);
 			dependencies = (
 			);
-			name = "app-tvOS";
-			productName = "app-tvOS";
-			productReference = 2D02E47B1E0B4A5D006451C7 /* app-tvOS.app */;
-			productType = "com.apple.product-type.application";
+			name = "EasterEggHunt-tvOS";
+			productName = "EasterEggHunt-tvOS";
+			productReference = 2D02E47B1E0B4A5D006451C7 /* EasterEggHunt-tvOS.EasterEggHunt */;
+			productType = "com.EasterEggHuntle.product-type.EasterEggHuntlication";
 		};
-		2D02E48F1E0B4A5D006451C7 /* app-tvOSTests */ = {
+		2D02E48F1E0B4A5D006451C7 /* EasterEggHunt-tvOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "app-tvOSTests" */;
+			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "EasterEggHunt-tvOSTests" */;
 			buildPhases = (
 				6BA725EFA7C466FB6F436474 /* [CP] Check Pods Manifest.lock */,
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
@@ -307,10 +307,10 @@
 			dependencies = (
 				2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */,
 			);
-			name = "app-tvOSTests";
-			productName = "app-tvOSTests";
-			productReference = 2D02E4901E0B4A5D006451C7 /* app-tvOSTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
+			name = "EasterEggHunt-tvOSTests";
+			productName = "EasterEggHunt-tvOSTests";
+			productReference = 2D02E4901E0B4A5D006451C7 /* EasterEggHunt-tvOSTests.xctest */;
+			productType = "com.EasterEggHuntle.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -338,7 +338,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "app" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "EasterEggHunt" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -351,10 +351,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* app */,
-				00E356ED1AD99517003FC87E /* appTests */,
-				2D02E47A1E0B4A5D006451C7 /* app-tvOS */,
-				2D02E48F1E0B4A5D006451C7 /* app-tvOSTests */,
+				13B07F861A680F5B00A75B9A /* EasterEggHunt */,
+				00E356ED1AD99517003FC87E /* EasterEggHuntTests */,
+				2D02E47A1E0B4A5D006451C7 /* EasterEggHunt-tvOS */,
+				2D02E48F1E0B4A5D006451C7 /* EasterEggHunt-tvOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -431,7 +431,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-app-appTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-EasterEggHunt-EasterEggHuntTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -467,7 +467,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-app-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-EasterEggHunt-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -489,7 +489,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-app-tvOSTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-EasterEggHunt-tvOSTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -511,7 +511,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-app-tvOS-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-EasterEggHunt-tvOS-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -563,7 +563,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E356F31AD99517003FC87E /* appTests.m in Sources */,
+				00E356F31AD99517003FC87E /* EasterEggHuntTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -589,7 +589,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DCD954D1E0B4F2C00145EB5 /* appTests.m in Sources */,
+				2DCD954D1E0B4F2C00145EB5 /* EasterEggHuntTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -598,12 +598,12 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* app */;
+			target = 13B07F861A680F5B00A75B9A /* EasterEggHunt */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 		2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2D02E47A1E0B4A5D006451C7 /* app-tvOS */;
+			target = 2D02E47A1E0B4A5D006451C7 /* EasterEggHunt-tvOS */;
 			targetProxy = 2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -615,7 +615,7 @@
 				13B07FB21A68108700A75B9A /* Base */,
 			);
 			name = LaunchScreen.xib;
-			path = app;
+			path = EasterEggHunt;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -623,14 +623,14 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B900F475B59107DDF786688 /* Pods-app-appTests.debug.xcconfig */;
+			baseConfigurationReference = 3B900F475B59107DDF786688 /* Pods-EasterEggHunt-EasterEggHuntTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = appTests/Info.plist;
+				INFOPLIST_FILE = EasterEggHuntTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -640,17 +640,17 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/app.app/app";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EasterEggHunt.EasterEggHunt/EasterEggHunt";
 			};
 			name = Debug;
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 277D74D298524CD0996C5398 /* Pods-app-appTests.release.xcconfig */;
+			baseConfigurationReference = 277D74D298524CD0996C5398 /* Pods-EasterEggHunt-EasterEggHuntTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				INFOPLIST_FILE = appTests/Info.plist;
+				INFOPLIST_FILE = EasterEggHuntTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -660,13 +660,13 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/app.app/app";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EasterEggHunt.EasterEggHunt/EasterEggHunt";
 			};
 			name = Release;
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CB2D5E2FFFF159B99016A478 /* Pods-app.debug.xcconfig */;
+			baseConfigurationReference = CB2D5E2FFFF159B99016A478 /* Pods-EasterEggHunt.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -676,7 +676,7 @@
 					"$(inherited)",
 					"FB_SONARKIT_ENABLED=1",
 				);
-				INFOPLIST_FILE = app/Info.plist;
+				INFOPLIST_FILE = EasterEggHunt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -684,21 +684,21 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = app;
+				PRODUCT_NAME = EasterEggHunt;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				VERSIONING_SYSTEM = "apple-generic";
+				VERSIONING_SYSTEM = "EasterEggHuntle-generic";
 			};
 			name = Debug;
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A025641DE11E4B3AD0C83DB1 /* Pods-app.release.xcconfig */;
+			baseConfigurationReference = A025641DE11E4B3AD0C83DB1 /* Pods-EasterEggHunt.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				INFOPLIST_FILE = app/Info.plist;
+				INFOPLIST_FILE = EasterEggHunt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -706,15 +706,15 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = app;
+				PRODUCT_NAME = EasterEggHunt;
 				SWIFT_VERSION = 5.0;
-				VERSIONING_SYSTEM = "apple-generic";
+				VERSIONING_SYSTEM = "EasterEggHuntle-generic";
 			};
 			name = Release;
 		};
 		2D02E4971E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 37F2B25372A024BD1B8591B7 /* Pods-app-tvOS.debug.xcconfig */;
+			baseConfigurationReference = 37F2B25372A024BD1B8591B7 /* Pods-EasterEggHunt-tvOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -725,16 +725,16 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "app-tvOS/Info.plist";
+				INFOPLIST_FILE = "EasterEggHunt-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.app-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.EasterEggHunt-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = appletvos;
+				SDKROOT = EasterEggHuntletvos;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.2;
 			};
@@ -742,7 +742,7 @@
 		};
 		2D02E4981E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3503D8A6D12F44A06BD9349E /* Pods-app-tvOS.release.xcconfig */;
+			baseConfigurationReference = 3503D8A6D12F44A06BD9349E /* Pods-EasterEggHunt-tvOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -753,16 +753,16 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "app-tvOS/Info.plist";
+				INFOPLIST_FILE = "EasterEggHunt-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.app-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.EasterEggHunt-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = appletvos;
+				SDKROOT = EasterEggHuntletvos;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.2;
 			};
@@ -770,7 +770,7 @@
 		};
 		2D02E4991E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D5C746D49FEA01B8EF6BF0EB /* Pods-app-tvOSTests.debug.xcconfig */;
+			baseConfigurationReference = D5C746D49FEA01B8EF6BF0EB /* Pods-EasterEggHunt-tvOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -780,24 +780,24 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "app-tvOSTests/Info.plist";
+				INFOPLIST_FILE = "EasterEggHunt-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.app-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.EasterEggHunt-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/app-tvOS.app/app-tvOS";
+				SDKROOT = EasterEggHuntletvos;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EasterEggHunt-tvOS.EasterEggHunt/EasterEggHunt-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Debug;
 		};
 		2D02E49A1E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D13F72B0766E33F991E0BB07 /* Pods-app-tvOSTests.release.xcconfig */;
+			baseConfigurationReference = D13F72B0766E33F991E0BB07 /* Pods-EasterEggHunt-tvOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -807,17 +807,17 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "app-tvOSTests/Info.plist";
+				INFOPLIST_FILE = "EasterEggHunt-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.app-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.EasterEggHunt-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/app-tvOS.app/app-tvOS";
+				SDKROOT = EasterEggHuntletvos;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EasterEggHunt-tvOS.EasterEggHunt/EasterEggHunt-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Release;
@@ -938,7 +938,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "appTests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "EasterEggHuntTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -947,7 +947,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "app" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "EasterEggHunt" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -956,7 +956,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "app-tvOS" */ = {
+		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "EasterEggHunt-tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4971E0B4A5E006451C7 /* Debug */,
@@ -965,7 +965,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "app-tvOSTests" */ = {
+		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "EasterEggHunt-tvOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4991E0B4A5E006451C7 /* Debug */,
@@ -974,7 +974,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "app" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "EasterEggHunt" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,

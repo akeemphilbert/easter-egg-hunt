@@ -144,7 +144,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.app"
+        applicationId "com.easteregghunt"
         minSdkVersion 23
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

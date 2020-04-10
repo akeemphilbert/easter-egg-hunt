@@ -5,7 +5,8 @@ import {addHuntEggs,updateLocation} from "../actions";
 const mapStateToProps = (state) => {
     return {
         currentEggHunt: state.hunt,
-        eggs: state.eggs
+        eggs: state.eggs,
+        total: Object.values(state.currentEggHunt.eggs).length
     }
 }
 

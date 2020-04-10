@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import {updateEgg} from "../actions";
+import {resetEggs, updateEgg} from "../actions";
 import HuntStatus from "../screens/HuntStatus";
 
 /**
@@ -9,7 +9,7 @@ import HuntStatus from "../screens/HuntStatus";
  * @returns {*}
  */
 const eggsInBasket = (eggs) => {
-    return Object.values(eggs).filter(e => e.position === undefined)
+    return Object.values(eggs).filter(e => e.hidden === false)
 };
 
 
@@ -26,10 +26,9 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        onFindEgg: (egg) => {
-            delete egg.position;
-            dispatch(updateEgg(egg));
-        },
+        resetEggs: () => {
+            dispatch(resetEggs());
+        }
     }
 };
 

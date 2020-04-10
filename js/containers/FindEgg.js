@@ -9,7 +9,7 @@ import {updateEgg} from "../actions";
  * @returns {*}
  */
 const getHiddenEggs = (eggs) => {
-    return Object.values(eggs).filter(e => e.position !== undefined)
+    return Object.values(eggs).filter(e => e.hidden === true)
 }
 
 const mapStateToProps = (state) => {
@@ -21,7 +21,7 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
     return {
         onFindEgg: (egg) => {
-            delete egg.position;
+            egg.hidden = false;
             dispatch(updateEgg(egg));
         },
     }
