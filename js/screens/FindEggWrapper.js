@@ -53,22 +53,24 @@ export default class FindEggWrapper extends Component {
    */
   showEggsThatAreNear(position) {
     //use some formula to find the eggs that are near
-    console.log('eggs to search for',position, this.props.hiddenEggs);
+    console.log('eggs to search for', position, this.props.hiddenEggs);
     let eggs = this.props.hiddenEggs.filter((e) =>
       e.position !== undefined
-        ? calculateDistance(
-            position,
-            e.position
-          ) < 4
+        ? calculateDistance(position, e.position) < 4
         : true,
     );
 
-    if (this.props.hiddenEggs.length > 0 && this.props.hiddenEggs[0].position !== undefined) {
-      console.log("distance",calculateDistance(this.props.hiddenEggs[0].position, position));
+    if (
+      this.props.hiddenEggs.length > 0 &&
+      this.props.hiddenEggs[0].position !== undefined
+    ) {
+      console.log(
+        'distance',
+        calculateDistance(this.props.hiddenEggs[0].position, position),
+      );
     }
 
-
-    console.log("eggs to find",eggs.length)
+    console.log('eggs to find', eggs.length);
 
     if (this.state.eggs.length !== eggs.length) {
       this.setState({eggs: eggs});
@@ -81,7 +83,7 @@ export default class FindEggWrapper extends Component {
 
   render() {
     if (this.props.hiddenEggs.length === 0) {
-      this.props.navigation.navigate("StartHunt");
+      this.props.navigation.navigate('StartHunt');
     }
     const EggFinder = () => {
       //because of the limitation of require all the eggs will need to be mapped here
@@ -95,19 +97,25 @@ export default class FindEggWrapper extends Component {
       });
 
       return (
-        <ViroARScene onCameraTransformUpdate={(ct)=>{this.showEggsThatAreNear(ct.position)}}>
-          <ViroAmbientLight color="#FFFFFF" intensity={20}/>
-          {Object.values(this.state.eggs).map((egg, key) => {
-            return (
-              <ViroSphere
-                position={egg.position}
-                materials={[egg.eggId]}
-                scale={[0.3, 0.3, 0.1]}
-                onClick={() => this.props.onFindEgg(egg)}
-                key={key}
-              />
-            );
-          })}
+        <ViroARScene
+          onCameraTransformUpdate={(ct) => {
+            this.showEggsThatAreNear(ct.position);
+          }}>
+          <ViroAmbientLight color="#FFFFFF" intensity={20} />
+          <ViroNode position={[0, 0, 0]}>
+            {Object.values(this.state.eggs).map((egg, key) => {
+              return (
+                <ViroSphere
+                  position={egg.position}
+                  materials={[egg.eggId]}
+                  scale={[0.3, 0.3, 0.1]}
+                  radius={0.5}
+                  onClick={() => this.props.onFindEgg(egg)}
+                  key={key}
+                />
+              );
+            })}
+          </ViroNode>
         </ViroARScene>
       );
     };
