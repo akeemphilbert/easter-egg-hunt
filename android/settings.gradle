@@ -1,6 +1,6 @@
-rootProject.name = 'app'
+rootProject.name = 'EasterEggHunt'
 apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
-include ':app', ':react_viro', ':arcore_client', ':gvr_common', ':viro_renderer'
+include ':EasterEggHunt', ':react_viro', ':arcore_client', ':gvr_common', ':viro_renderer'
 project(':arcore_client').projectDir = new File('../node_modules/react-viro/android/arcore_client')
 project(':gvr_common').projectDir = new File('../node_modules/react-viro/android/gvr_common')
 project(':viro_renderer').projectDir = new File('../node_modules/react-viro/android/viro_renderer')
