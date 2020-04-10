@@ -12,10 +12,10 @@
 #import <SKIOSNetworkPlugin/SKIOSNetworkAdapter.h>
 #import <FlipperKitReactPlugin/FlipperKitReactPlugin.h>
 
-static void InitializeFlipper(UIApplication *EasterEggHuntlication) {
+static void InitializeFlipper(UIApplication *application) {
   FlipperClient *client = [FlipperClient sharedClient];
-  SKDescriptorMEasterEggHunter *layoutDescriptorMEasterEggHunter = [[SKDescriptorMEasterEggHunter alloc] initWithDefaults];
-  [client addPlugin:[[FlipperKitLayoutPlugin alloc] initWithRootNode:EasterEggHuntlication withDescriptorMEasterEggHunter:layoutDescriptorMEasterEggHunter]];
+  SKDescriptorMapper *layoutDescriptorMapper = [[SKDescriptorMapper alloc] initWithDefaults];
+  [client addPlugin:[[FlipperKitLayoutPlugin alloc] initWithRootNode:application withDescriptorMapper:layoutDescriptorMapper]];
   [client addPlugin:[[FKUserDefaultsPlugin alloc] initWithSuiteName:nil]];
   [client addPlugin:[FlipperKitReactPlugin new]];
   [client addPlugin:[[FlipperKitNetworkPlugin alloc] initWithNetworkAdapter:[SKIOSNetworkAdapter new]]];
@@ -25,10 +25,10 @@ static void InitializeFlipper(UIApplication *EasterEggHuntlication) {
 
 @implementation AppDelegate
 
-- (BOOL)EasterEggHuntlication:(UIApplication *)EasterEggHuntlication didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
 #if DEBUG
-  InitializeFlipper(EasterEggHuntlication);
+  InitializeFlipper(application);
 #endif
 
   RCTBridge *bridge = [[RCTBridge alloc] initWithDelegate:self launchOptions:launchOptions];
