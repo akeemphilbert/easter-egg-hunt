@@ -5,7 +5,7 @@ import {StyleSheet, SafeAreaView, View, Text} from 'react-native';
 import {Button} from '@ui-kitten/components';
 import SvgUri from 'react-native-svg-uri';
 
-export default ({navigation,reset}) => {
+export default ({navigation, reset}) => {
   return (
     <SafeAreaView>
       <View style={styles.layout}>
@@ -23,7 +23,10 @@ export default ({navigation,reset}) => {
             style={styles.button}
             appearance="filled"
             status="success"
-            onPress={() => {reset();navigation.navigate('CreateEggHunt')}}>
+            onPress={() => {
+              reset();
+              navigation.navigate('CreateEggHunt');
+            }}>
             Create Egg Hunt
           </Button>
           <Button
