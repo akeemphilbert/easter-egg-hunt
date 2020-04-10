@@ -1,7 +1,7 @@
 'use strict';
 
 import React from 'react';
-import {StyleSheet, SafeAreaView, View, Text} from 'react-native';
+import {StyleSheet, SafeAreaView, View, Text, Image} from 'react-native';
 import {Button} from '@ui-kitten/components';
 import SvgUri from 'react-native-svg-uri';
 
@@ -12,11 +12,7 @@ export default ({navigation, reset}) => {
         <Text style={styles.header}>Easter Egg Hunt</Text>
         <Text style={styles.subHeader}>By Wepala</Text>
         <View style={styles.image}>
-          <SvgUri
-            width="240"
-            height="240"
-            source={require('../../assets/images/basket.svg')}
-          />
+          <Image source={require('../../assets/images/basket.png')} style={styles.mainImage} />
         </View>
         <View style={styles.buttonContainer}>
           <Button
@@ -74,5 +70,9 @@ const styles = StyleSheet.create({
     marginTop: 10,
     width: '100%',
     borderRadius: 30,
+  },
+  mainImage: {
+    width: 240,
+    height: 240,
   },
 });
