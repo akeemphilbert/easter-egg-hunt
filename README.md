@@ -1,29 +1,29 @@
-# README #
+# Easter Egg Hunt App #
 
-This README would normally document whatever steps are necessary to get your application up and running.
 
 ### What is this repository for? ###
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+* Augmented Reality Easter Egg Hunt Application. For educational purposes only  
+* 0.1-alpha
+* License: agpl-3.0
 
 ### How do I get set up? ###
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+* Clone the repository
+* Run `npm install`
+* Ensure you have android sdk setup 
+* Ensure that android phone is connected to computer (it doesn't seem to work in the android emulator)
+* Run `react-native run-android`
+
+NB: Didn't try to run on iphone though in theory it should work. 
 
 ### Contribution guidelines ###
 
-* Writing tests
-* Code review
-* Other guidelines
+* Tests are written for the reducers and helper functions
+* To make updates clone the repository and do a PR
+* Reviews are done in two parts. The first review is a code review to ensure that style 
 
 ### Who do I talk to? ###
 
-* Repo owner or admin
-* Other community or team contact
+* Akeem Philbert <akeem.philbert@wepala.com>
+* Wepala
