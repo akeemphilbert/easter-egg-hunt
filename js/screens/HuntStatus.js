@@ -71,7 +71,7 @@ export default class HuntStatus extends Component {
         </View>
         <View style={styles.buttonContainer}>
           <Button
-            disabled={this.state.farFromStart || this.props.allEggsFound}
+            disabled={this.props.allEggsFound}
             style={styles.button}
             appearance="primary"
             onPress={() => this.props.navigation.navigate('FindEgg')}>
@@ -117,7 +117,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'flex-end',
     alignItems: 'center',
-  },
+    },
   button: {
     marginTop: 10,
     width: '100%',
