@@ -1,53 +1,78 @@
 'use strict';
 
-import React, { Component } from 'react';
-import {StyleSheet, SafeAreaView, View, Button, Text} from 'react-native';
+import React from 'react';
+import {StyleSheet, SafeAreaView, View, Text, Image} from 'react-native';
+import {Button} from '@ui-kitten/components';
+import SvgUri from 'react-native-svg-uri';
 
-export default ({navigation}) => {
-    return (
-        <SafeAreaView>
-            <View>
-                <View>
-                    <Text style={styles.title}>Easter Egg Hunt</Text>
-                    <Text style={styles.byLine}>By Wepala</Text>
-                </View>
-                <View>
-                    <Button title="Create Egg Hunt" onPress={() => navigation.navigate('CreateEggHunt')} />
-                    <Button title="Join Egg Hunt" />
-                    <Button title="List of Hunts" />
-                </View>
-            </View>
-        </SafeAreaView>
-    )
-}
+export default ({navigation, reset}) => {
+  return (
+    <SafeAreaView>
+      <View style={styles.layout}>
+        <Text style={styles.header}>Easter Egg Hunt</Text>
+        <Text style={styles.subHeader}>By Wepala</Text>
+        <View style={styles.image}>
+          <Image source={require('../../assets/images/basket.png')} style={styles.mainImage} />
+        </View>
+        <View style={styles.buttonContainer}>
+          <Button
+            style={styles.button}
+            appearance="filled"
+            status="success"
+            onPress={() => {
+              reset();
+              navigation.navigate('CreateEggHunt');
+            }}>
+            Create Egg Hunt
+          </Button>
+          <Button
+            style={styles.button}
+            appearance="filled"
+            status="warning"
+            onPress={() => navigation.navigate('StartHunt')}>
+            Join Egg Hunt
+          </Button>
+        </View>
+      </View>
+    </SafeAreaView>
+  );
+};
 
 const styles = StyleSheet.create({
-    screen: {
-        flexDirection: 'column'
-    },
-    header: {
-      flex: 10, backgroundColor: '#2196F3'
-    },
-    buttons: {
-      flex: 1, backgroundColor: '#8BC34A'
-    },
-    title: {
-        textAlign: 'center',
-        fontSize: 30,
-    },
-    byLine: {
-        textAlign: 'center'
-    },
-    button: {
-        marginBottom: 20
-    },
-    action: {
-        backgroundColor: "#5cb85c",
-    },
-    join: {
-        backgroundColor: "#f0ad4e",
-    },
-    info: {
-        backgroundColor: "#428bca",
-    }
+  layout: {
+    height: '100%',
+    padding: 30,
+    backgroundColor: '#438FCB',
+  },
+  header: {
+    fontFamily: 'Tahu!',
+    fontSize: 55,
+    color: '#fff',
+    textAlign: 'center',
+  },
+  subHeader: {
+    fontFamily: 'Tahu!',
+    fontSize: 20,
+    color: '#fff',
+    textAlign: 'center',
+  },
+  image: {
+    paddingTop: 20,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  buttonContainer: {
+    flex: 1,
+    justifyContent: 'flex-end',
+    alignItems: 'center',
+  },
+  button: {
+    marginTop: 10,
+    width: '100%',
+    borderRadius: 30,
+  },
+  mainImage: {
+    width: 240,
+    height: 240,
+  },
 });

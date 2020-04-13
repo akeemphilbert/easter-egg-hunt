@@ -1,11 +1,12 @@
 import {connect} from 'react-redux';
 import EggList from "../screens/EggList";
-import {addHuntEggs} from "../actions";
+import {addHuntEggs,updateLocation} from "../actions";
 
 const mapStateToProps = (state) => {
     return {
         currentEggHunt: state.hunt,
-        eggs: state.eggs
+        eggs: state.eggs,
+        total: Object.values(state.currentEggHunt.eggs).length
     }
 }
 
@@ -14,6 +15,9 @@ const mapDispatchToProps = (dispatch) => {
         onPickEgg: (egg, navigation) => {
             dispatch(addHuntEggs(egg, 1));
             navigation.navigate("HideEgg")
+        },
+        updateStartPosition:(coords) => {
+            dispatch(updateLocation(coords))
         }
     }
 }
